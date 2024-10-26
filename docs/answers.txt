@@ -1,0 +1,56 @@
+October 25, 2024 for tutorials
+2016 for Github
+
+1. Paste the console output you saved at the end of step 3.C (2 points)
+
+    On branch master
+    Your branch is up to date with 'origin/master'.
+
+    nothing to commit, working tree clean
+
+
+2. How many commits have been done to the repository (not only by you, but by anyone) so far? Write the git command you used to get this information (4 points)
+
+    git log. 7 commits. I combined adding the answers and status file into one commit
+
+3. When was the README.md  file modified last? Write the git command you used to get this information (4 points)
+
+    Wed Sep 25 18:33:08 2019 -0400
+    git log -1 -- README.md
+
+4. Mention two reasons why branches are used in a Git repository (4 points)
+
+    Parallel development and code review
+
+5. What is the difference between git log and git status? (4 points)
+
+    git log lists the commit history.
+    git status is the current state of the working directory and staging area.
+
+6. What command would you use to see the commits where “Vehicle.h” was one of the committed files? (4 points)
+
+    git log -- Vehicle.h
+
+7. What command would you use to see the commits whose commit message contains the word “file”? (4 points)
+
+    git log --grep="file"
+
+
+8. In the context of object-oriented programming (I) What is inheritance? (II) What is  
+polymorphism? (III) What is encapsulation? (6 points)
+
+    I.   Inheritance allows a class to inherit methods and attributes from a parent 
+         class
+    II.  Polymorphism is when an object can take on different forms or behaviors    
+         depending on the context.
+    III. Encapsulation restricting direct access to some of the object's methods and 
+         attributes. Setting components to private or protected.
+
+
+9.  What is the main difference between the “Dictator and Lieutenants” workflow and the “Integration manager” workflow? (5 points)
+
+The main difference is that the Integration managers merge contributions into the main branch. Where as the Dictator is the only authority that can push to the main branch
+
+10. How would a team of 100 developers benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow? (5 points)
+
+The “Dictator and Lieutenants” workflow works for larger organizations because it breaks up the the centralized workflow. Breaking things up creates a better separation of concerns, easier code reviews, and lessens the chances of merge conflicts.
